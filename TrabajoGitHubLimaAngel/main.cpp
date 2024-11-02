@@ -7,7 +7,7 @@ using namespace std;//Espacio de trabajo
 string Lima_nom;
 int Lima_tot;
 bool Lima_checkRegister=false,Lima_checkAverage=false;
-double Lima_promedio,Lima_grade1,Lima_grade2,Lima_grade3;
+double
 
 void Lima_Menu();//declaración de subproceso
 
@@ -72,11 +72,7 @@ void Lima_GuardarArchivo(string Lima_nom, double Lima_grade1, double Lima_grade2
         Lima_file<<"Nota 2: "<<Lima_grade2<<endl;
         Lima_file<<"Nota 3: "<<Lima_grade3<<endl;
         Lima_file<<" "<<endl;
-        if(Lima_promedio>=14){//Se verifica si el estudiante aprobó o no
-            Lima_file<<"Promedio: "<<Lima_promedio<<", El estudiante aprueba"<<endl;
-        }else{
-            Lima_file<<"Promedio: "<<Lima_promedio<<", El estudiante reprueba"<<endl;
-        }
+        Lima_file<<"Estado"<<(Lima_studentAverage >= 14) ? "Aproba" : "Reprueba"<<endl;//Se verifica si el estudiante aprobó o no
         Lima_file<<"-------------------------------------------------------------"<<endl;
         Lima_file<<" "<<endl;
     }else{
