@@ -1,4 +1,4 @@
-package com.espe.p1ejemplogithubjavalimaangel;
+package com.espe.Lima_Angel;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -7,8 +7,8 @@ import org.json.simple.JSONObject;//Librería para trabajar con archivos JSON
 import java.io.IOException;//Para manejar los errores al momento de crear el archivo
 
 public class Lima_Student {
-
-    protected String Lima_nom;
+	
+	protected String Lima_nom;
     protected double Lima_studentAverage, Lima_grade1, Lima_grade2, Lima_grade3;
     protected Boolean Lima_checkRegister = false, Lima_checkAverage = false;
 
